@@ -1,0 +1,22 @@
+{
+  "name": "1_videocallapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "peer": "^0.6.1",
+    "socket.io": "^3.0.4",
+    "uuid": "^8.3.2"
+  }
+}
