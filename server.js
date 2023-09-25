@@ -14,10 +14,11 @@ app.use("/peerjs", peer);
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.get("/", (req, res) => {
-  res.send(uuidv4());
+  res.render("index");
+  // console.log(uuidv4());
 });
 app.get("/:room", (req, res) => {
-  res.render("index", { RoomId: req.params.room });
+  res.render("call_view", { RoomId: req.params.room });
 });
 io.on("connection", (socket) => {
   socket.on("newUser", (id, room) => {
